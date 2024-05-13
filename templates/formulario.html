@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Selecciona un barrio y un día del mes</h1>
+    <form action="/" method="POST">
+        <label for="barrio">Barrio:</label>
+        <select name="barrio" id="barrio">
+            {% for barrio in barrios %}
+            <option value="{{ barrio }}">{{ barrio }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <label for="dia_mes">Día del mes:</label>
+        <input type="number" name="dia_mes" id="dia_mes" min="1" max="31">
+        <br><br>
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>
