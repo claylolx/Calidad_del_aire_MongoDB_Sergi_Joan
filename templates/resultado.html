@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado</title>
+    <title>Calidad del Aire - Resultado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
+
 <body>
-    <h1>Datos de contaminación</h1>
-    <p>Barrio: {{ barrio }}</p>
-    <p>Día: {{ contaminacion_data.DIA }}</p>
-    <p>Tipo de contaminante: {{ desc_contaminant }}</p>
-    <a href="/">Volver al formulario</a>
+    <div class="container">
+        <h1 class="title">Datos de Calidad del Aire</h1>
+        <div class="result">
+            <p class="text">Barrio: {{ barrio }}</p>
+            <p class="text">Día: {{ contaminacion_data.DIA }}</p>
+            <p class="text">Tipo de Contaminante: {{ desc_contaminant }}</p>
+            <a href="/" class="link">Volver al formulario</a>
+        </div>
+        <footer class="footer">
+            <p class="text">© Joan y Sergi todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
+
 </html>

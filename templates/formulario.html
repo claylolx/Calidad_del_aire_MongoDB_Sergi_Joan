@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Calidad del Aire - Formulario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
+
 <body>
-    <h1>Selecciona un barrio y un día del mes</h1>
-    <form action="/" method="POST">
-        <label for="barrio">Barrio:</label>
-        <select name="barrio" id="barrio">
-            {% for barrio in barrios %}
-            <option value="{{ barrio }}">{{ barrio }}</option>
-            {% endfor %}
-        </select>
-        <br><br>
-        <label for="dia_mes">Día del mes:</label>
-        <input type="number" name="dia_mes" id="dia_mes" min="1" max="31">
-        <br><br>
-        <input type="submit" value="Buscar">
-    </form>
+    <div class="container">
+        <h1 class="title">Consulta de Calidad del Aire</h1>
+        <form action="/" method="POST">
+            <div class="form-group">
+                <label for="barrio" class="label">Barrio:</label>
+                <select name="barrio" id="barrio" class="select">
+                    {% for barrio in barrios %}
+                    <option value="{{ barrio }}">{{ barrio }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dia_mes" class="label">Día del mes:</label>
+                <input type="number" name="dia_mes" id="dia_mes" class="input" min="1" max="31">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="button">Buscar</button>
+            </div>
+        </form>
+        <footer class="footer">
+            <p class="text">© Joan y Sergi todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
+
 </html>
