@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0077B6;
+}
+
+.title-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #fff; 
+    font: 14.5em/1 Open Sans, Impact;
+}
+
+.center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #ced4da; /* Borde */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.form-group {
+    margin-bottom: 20px;    
+    text-align: center; /* Alinear elementos al centro */
+}
+
+.label {
+    font-weight: bold;
+    display: block; /* Para que el label ocupe toda la línea */
+    margin-bottom: 10px; /* Añadir margen inferior */
+}
+
+.select,
+.input,
+.button {
+    padding: 10px;
+    border: 0px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    width: calc(100% - 22px);
+    text-align: center;
+}
+
+.select:focus,
+.input:focus,
+.button:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.button {
+    background-color: #90E0EF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #CAF0F8;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00B4D8;
+    bottom: 0;
+    border-top: 1px solid #90E0EF; /* Añadir línea superior */
+}
+
+.text {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #01257D;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 25px;
+}
+
