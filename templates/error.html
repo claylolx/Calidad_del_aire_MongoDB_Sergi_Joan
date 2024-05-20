@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}">
     <title>Error</title>
 </head>
 <body>
-    <h1>Error</h1>
+    <h1>ATENCIÓN</h1>
+    <div class="image-container">
+        <img src="https://cdn.pixabay.com/photo/2013/07/12/13/22/warning-146916_1280.png" alt="Warning">
+    </div>
     <p>{{ message }}</p>
-    <a href="/">Volver al formulario</a>
+    <a href="/formulario">Volver al formulario</a>
 </body>
 </html>

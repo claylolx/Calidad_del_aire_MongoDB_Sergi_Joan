@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0077B6;
+}
+
+.title-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #fff; 
+    font: 14.5em/1 Open Sans, Impact;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #01257D;
+    bottom: 0;
+    border-top: 1px solid #FFF; /* Añadir línea superior */
+}
+
+.text {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #01257D;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 100px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 0px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #01257D;
+    color: #fff;
+    cursor: pointer;
+    display: block; /* Cambio a bloque para que ocupe todo el ancho */
+    margin: 120px auto 0; /* Margen superior de 20px, margen inferior de 0 y margen lateral automático para centrar */
+    width: fit-content; /* Ajustar el ancho al contenido */
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+.button:hover {
+    scale: 1.3;
+    background: #0077B6;
+    box-shadow: 0 0 10px black;
+}
+
+
+
+

@@ -9,20 +9,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="title">Datos de Calidad del Aire</h1>
-        <div class="result">
-            <p class="text">Barrio: {{ barrio }}</p>
-            <p class="text">Día: {{ contaminacion_data.DIA }}</p>
-            <p class="text">Tipo de Contaminante: {{ desc_contaminant }}</p>
-            <p class="text">Unidades: {{ unitats }}</p>
-            <p class="text">Valor H12: {{ h12 }}</p>
-            <a href="/" class="link">Volver al formulario</a>
+    <div class="main-container">
+        <div class="container">
+            <h1 class="title">Datos de Calidad del Aire</h1>
+            <div class="result">
+                <p class="text"><strong>Barrio:</strong> {{ barrio }}</p>
+                <p class="text"><strong>Día:</strong> {{ contaminacion_data.DIA }}</p>
+                <p class="text"><strong>Tipo de Contaminante:</strong> {{ desc_contaminant }}</p>
+                <p class="text"><strong>Unidades:</strong> {{ unitats }}</p>
+                <p class="text"><strong>Valor H12:</strong> {{ h12 }}</p>
+                <a href="/formulario" class="button">Volver al formulario</a>
+            </div>
         </div>
-        <footer class="footer">
-            <p class="text">© Joan y Sergi todos los derechos reservados.</p>
-        </footer>
+        <div class="image-container">
+            <img src="https://66.media.tumblr.com/4a3feab89966f493274edea944dbd5e8/tumblr_o6l5ry9vgQ1s8mouyo1_1280.gif" alt="Warning">
+        </div>
     </div>
+    <footer class="footer">
+        <p class="text">© Joan y Sergi. Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>
